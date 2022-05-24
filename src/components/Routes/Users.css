@@ -1,0 +1,20 @@
+.input {
+    padding-bottom: 50px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.input-field{
+    width: 20%;
+    padding: 12px 20px;
+    /* margin: 8px 0; */
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    margin-bottom: 4.5px;
+    padding: 12px;
+}

@@ -1,0 +1,4 @@
+.parent-div {
+    display: flex;
+    flex-wrap: wrap;
+}
