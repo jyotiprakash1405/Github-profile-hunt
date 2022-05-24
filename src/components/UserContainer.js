@@ -8,7 +8,7 @@ function UserContainer({users}) {
         {
             users && users.map((user , index)=>{
                 return (
-                        user?.login && (
+                        user?.login ? (
                         <div className="card" key={index}>
                             <img style={{width: "20%" , border: "3px solid #343a40"}} src={user.avatar_url} alt='logo'></img>
                             <div className="container">
@@ -21,7 +21,12 @@ function UserContainer({users}) {
                                 </Link>
                                 
                             </div>
-                        </div>)
+                        </div>) : 
+                        <div style={{textAlign:"center"}}>
+                            <h1>Not Found</h1>
+                            <img style={{width: "30%"}}
+                            src='https://png.pngtree.com/png-clipart/20190516/original/pngtree-404-error-interface-art-word-design-404-error-page404-png-image_4043816.jpg'></img>
+                        </div>
                     )
             })
         }
